@@ -20,6 +20,10 @@ public class BoxPush : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        if(hit.gameObject.tag == "PastCube")
+        {
+            hit.gameObject.GetComponent<InteractCube>().hit = true;
+        }
         Rigidbody rigidbody = hit.collider.attachedRigidbody;
 
         if(rigidbody != null)

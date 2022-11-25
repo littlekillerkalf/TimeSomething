@@ -5,14 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - PastCube
+  - PresentCube
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Past Cube
   - Water
   - UI
-  - 
+  - Present Cube
   - 
   - 
   - 

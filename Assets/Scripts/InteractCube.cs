@@ -9,7 +9,8 @@ public class InteractCube : MonoBehaviour
     [SerializeField]
 
     public bool hit;
-    private float timer;
+    [SerializeField]
+    private float timer = 2;
     private void Start()
     {
 
@@ -19,6 +20,7 @@ public class InteractCube : MonoBehaviour
         if (hit)
         {
             timer = timer - Time.deltaTime;
+            Debug.Log("hit");
         }
         if(timer < 0)
         {
@@ -31,8 +33,12 @@ public class InteractCube : MonoBehaviour
 
     }
 
-    public void MoveCube()
+    private void MoveCube()
     {
-        futureCube.transform.position = new Vector3(transform.position.x, transform.position.y + 400, transform.position.z);
+        futureCube.SetActive(true);
+        futureCube.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        futureCube.transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z, transform.rotation.w);
+        timer = 2;
+        Debug.Log("moved");
     }
 }
