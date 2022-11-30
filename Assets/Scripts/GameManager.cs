@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,14 +10,30 @@ public class GameManager : MonoBehaviour
     private GameObject presentMap;
     [SerializeField]
     private GameObject pastMap;
+
+    private float timer = 2;
+    private bool timeJump = false;
+
+    public TextMeshProUGUI timerText;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if(timeJump == false)
+        {
+            timer = timer - Time.deltaTime;
+        }
+        if(timer <= 0)
+        {
+            timeJump = true;
+        }
+        if (Input.GetButtonDown("Fire1") && timeJump == true)
         {
             Time.timeScale = 0;
             TimeJumping();
+            timeJump = false;
+            timer = 2;
         }
+        timerText.text = "Time Jump: " + timer.ToString("f0");
     }
 
     private void TimeJumping()
