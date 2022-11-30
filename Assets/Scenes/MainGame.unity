@@ -1266,7 +1266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1255599351
 Transform:
   m_ObjectHideFlags: 0
@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f260d836c60e72843b1f116cafb16933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 2
+  level: SecondLevel
 --- !u!65 &1255599353
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1328,7 +1328,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9390fd0032aa0af4db73d906f9868638, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1786,6 +1786,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 940262096}
     m_Modifications:
+    - target: {fileID: 2352774731101347370, guid: c44af10a18baf8842bfa72d2c148899e, type: 3}
+      propertyPath: objects
+      value: 
+      objectReference: {fileID: 1255599350}
     - target: {fileID: 2352774731495841705, guid: c44af10a18baf8842bfa72d2c148899e, type: 3}
       propertyPath: m_RootOrder
       value: 3
