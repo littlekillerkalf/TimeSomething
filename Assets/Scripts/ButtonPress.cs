@@ -6,31 +6,64 @@ public class ButtonPress : MonoBehaviour
 {
     public bool isButton = true;
     public GameObject objects;
+    public bool invert = false;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "PresentCube" && isButton)
+        if (!invert)
         {
-            Debug.Log("Fuck");
-            objects.SetActive(true);
+            if (other.tag == "PresentCube" && isButton)
+            {
+                Debug.Log("Fuck");
+                objects.SetActive(true);
+            }
+            if (other.tag == "PastCube" && isButton)
+            {
+                Debug.Log("Fuck");
+                objects.SetActive(true);
+            }
         }
-        if (other.tag == "PastCube" && isButton)
+        else if (invert)
         {
-            Debug.Log("Fuck");
-            objects.SetActive(true);
+            if (other.tag == "PresentCube" && isButton)
+            {
+                Debug.Log("Fuck");
+                objects.SetActive(false);
+            }
+            if (other.tag == "PastCube" && isButton)
+            {
+                Debug.Log("Fuck");
+                objects.SetActive(false);
+            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "PresentCube" && isButton)
+        if (!invert)
         {
-            Debug.Log("Fuck");
-            objects.SetActive(false);
+            if (other.tag == "PresentCube" && isButton)
+            {
+                Debug.Log("Fuck");
+                objects.SetActive(false);
+            }
+            if (other.tag == "PastCube" && isButton)
+            {
+                Debug.Log("Fuck");
+                objects.SetActive(false);
+            }
         }
-        if (other.tag == "PastCube" && isButton)
+        else if (invert)
         {
-            Debug.Log("Fuck");
-            objects.SetActive(false);
+            if (other.tag == "PresentCube" && isButton)
+            {
+                Debug.Log("Fuck");
+                objects.SetActive(true);
+            }
+            if (other.tag == "PastCube" && isButton)
+            {
+                Debug.Log("Fuck");
+                objects.SetActive(true);
+            }
         }
     }
 }
