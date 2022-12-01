@@ -1113,7 +1113,7 @@ PrefabInstance:
       objectReference: {fileID: 723799644}
     - target: {fileID: 3318566682506601461, guid: 0265094d10c5a4f4aa7b2be0c7180850, type: 3}
       propertyPath: mouseSensitivity
-      value: 600
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3691947779136642029, guid: 0265094d10c5a4f4aa7b2be0c7180850, type: 3}
       propertyPath: m_Name
@@ -1199,7 +1199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ad95da150aa8d4480d6f5772bfa42c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 0.1
+  forceMagnitude: 2
 --- !u!1 &761232528
 GameObject:
   m_ObjectHideFlags: 0

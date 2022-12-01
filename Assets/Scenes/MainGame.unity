@@ -2220,7 +2220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ad95da150aa8d4480d6f5772bfa42c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 0.2
+  forceMagnitude: 5
 --- !u!1 &895429902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7742980445437469081, guid: d305b30ecfcd6c040a013def2184a1ee, type: 3}
@@ -3368,7 +3368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1255599351
 Transform:
   m_ObjectHideFlags: 0
@@ -5061,7 +5061,7 @@ PrefabInstance:
       objectReference: {fileID: 488702322}
     - target: {fileID: 3318566682506601461, guid: 0265094d10c5a4f4aa7b2be0c7180850, type: 3}
       propertyPath: mouseSensitivity
-      value: 600
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3691947779136642029, guid: 0265094d10c5a4f4aa7b2be0c7180850, type: 3}
       propertyPath: m_Name
@@ -5472,7 +5472,11 @@ PrefabInstance:
     - target: {fileID: 2352774731101347370, guid: c44af10a18baf8842bfa72d2c148899e, type: 3}
       propertyPath: objects
       value: 
-      objectReference: {fileID: 1255599350}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2352774731101347370, guid: c44af10a18baf8842bfa72d2c148899e, type: 3}
+      propertyPath: isButton
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2352774731495841705, guid: c44af10a18baf8842bfa72d2c148899e, type: 3}
       propertyPath: m_RootOrder
       value: 3
