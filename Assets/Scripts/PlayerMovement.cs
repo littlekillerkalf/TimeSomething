@@ -52,13 +52,13 @@ public class PlayerMovement : MonoBehaviour
             if (attachedCamera.gameObject.GetComponent<MouseLook>().open == false)
             {
                 controller.Move(move * speed * Time.deltaTime);
-                if (Input.GetButtonDown("Jump") && !jumped)
-                {
-                velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-                jumped = true;
-                jumpTimerComplete = false;
-                timer = 0.7f;
-                }
+                //if (Input.GetButtonDown("Jump") && !jumped)
+                //{
+                //velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+                //jumped = true;
+                //jumpTimerComplete = false;
+                //timer = 0.7f;
+                //}
             }
 
             if (!jumpTimerComplete)

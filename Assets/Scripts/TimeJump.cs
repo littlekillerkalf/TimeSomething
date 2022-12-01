@@ -5,12 +5,19 @@ using UnityEngine;
 public class TimeJump : MonoBehaviour
 {
     private bool present = true;
+    public bool helpTextOn = false;
+    public GameObject helpText;
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
         {
             TimeJumping();
+            if (helpTextOn)
+            {
+                helpTextOn = false;
+                helpText.SetActive(false);
+            }
         }
     }
 

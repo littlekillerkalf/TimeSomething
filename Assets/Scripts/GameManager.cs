@@ -5,6 +5,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
     private bool present = true;
     [SerializeField]
     private GameObject presentMap;
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     private bool timeJump = false;
 
     public TextMeshProUGUI timerText;
+    public bool helpTextOn = false;
+    public GameObject helpText;
     // Update is called once per frame
     void Update()
     {
@@ -32,6 +35,11 @@ public class GameManager : MonoBehaviour
             TimeJumping();
             timeJump = false;
             timer = 2;
+            if (helpTextOn)
+            {
+                helpTextOn = false;
+                helpText.SetActive(false);
+            }
         }
         timerText.text = "Time Jump: " + timer.ToString("f0");
     }
