@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3691947779136642031}
   - component: {fileID: 3691947779136642030}
   - component: {fileID: 35650612149559229}
+  - component: {fileID: 7058632335566432530}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,6 +78,19 @@ MonoBehaviour:
   isGrounded: 1
   jumped: 0
   attachedCamera: {fileID: 3691947780190116025}
+--- !u!114 &7058632335566432530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3691947779136642029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ad95da150aa8d4480d6f5772bfa42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceMagnitude: 2
 --- !u!1 &3691947779643023080
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,5 +287,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 20
-  playerBody: {fileID: 3691947779643023081}
+  playerBody: {fileID: 3691947779136642031}
   open: 0
