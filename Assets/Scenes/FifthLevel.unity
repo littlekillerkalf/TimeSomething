@@ -5080,7 +5080,7 @@ PrefabInstance:
       objectReference: {fileID: 1215419530}
     - target: {fileID: 3318566682506601461, guid: 0265094d10c5a4f4aa7b2be0c7180850, type: 3}
       propertyPath: mouseSensitivity
-      value: 400
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3691947779136642029, guid: 0265094d10c5a4f4aa7b2be0c7180850, type: 3}
       propertyPath: m_Name
@@ -5136,7 +5136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7058632335566432530, guid: 0265094d10c5a4f4aa7b2be0c7180850, type: 3}
       propertyPath: forceMagnitude
-      value: 0.2
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0265094d10c5a4f4aa7b2be0c7180850, type: 3}
@@ -8612,7 +8612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8281787143698914267, guid: ef7bb3b23a8ceba46b6d68031cdc2a70, type: 3}
       propertyPath: level
-      value: Hub
+      value: MainGame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef7bb3b23a8ceba46b6d68031cdc2a70, type: 3}
